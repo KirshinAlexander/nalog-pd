@@ -1,0 +1,29 @@
+{
+    "name": "kirshin/nalog-pd",
+    "description": "Библиотека для проверка имеет ли физическое лицо статус самозанятого на определенную дату.",
+    "keywords": [
+        "самозанятость",
+        "самозанятый",
+        "налог на профессиональный доход",
+        "проверка на самозанятость",
+        "проверка налог на профессиональный доход"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexander Kirshin",
+            "email": "alexander.kirshin.dev@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kirshin\\CheckNalog\\": "src/"
+        }
+    }
+}
