@@ -1,4 +1,7 @@
-# folders
+# project folders
 .idea/
 vendor/
 public/
+
+# project files
+composer.lock
