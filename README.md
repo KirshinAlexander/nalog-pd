@@ -14,4 +14,4 @@
     $request = new CheckNalogPd("ваш_инн");
     $response = $request->check();
     $response["status"] - статус на заданную дату, или если не передана дата, то статус за предыдущий день (true/false)
-    $response["message"] - "сообщение с описаниением  результата запроса"
+    $response["message"] - сообщение с описаниением  результата запроса
