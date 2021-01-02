@@ -4,7 +4,7 @@
 
 С помощью composer:
 
-    composer require kirshin/kirshin/nalog-pd
+    composer require kirshin/nalog-pd
 
 ### Использование
 
