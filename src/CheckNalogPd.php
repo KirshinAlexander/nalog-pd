@@ -4,7 +4,6 @@
 namespace Kirshin\CheckNalog;
 
 
-use Exception;
 use JsonException;
 
 class CheckNalogPd
@@ -12,7 +11,6 @@ class CheckNalogPd
     private $fields;
 
     private const URL = 'https://statusnpd.nalog.ru/api/v1/tracker/taxpayer_status';
-
 
     /**
      * CheckNalogPd constructor.
@@ -24,10 +22,18 @@ class CheckNalogPd
         $this->setFields($inn, $date);
     }
 
-    public function check(): void
+    /**
+     * @return array
+     */
+    public function check(): array
     {
         $response = $this->httpPost(self::URL, $this->fields);
-        // :TODO
+
+        try {
+            return json_decode($response, true, 2, JSON_THROW_ON_ERROR);
+        } catch (JsonException $e) {
+            // :TODO
+        }
     }
 
     /**
