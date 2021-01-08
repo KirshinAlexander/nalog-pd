@@ -1,6 +1,6 @@
 {
     "name": "kirshin/nalog-pd",
-    "description": "Проверка имеет ли физическое лицо статус самозанятого на заданную дату",
+    "description": "проверка, имеет ли физическое лицо статус самозанятого на заданную дату",
     "keywords": [
         "самозанятость",
         "самозанятый",
@@ -10,6 +10,7 @@
     ],
     "type": "library",
     "license": "MIT",
+    "homepage": "http://kirshin.site",
     "authors": [
         {
             "name": "Alexander Kirshin",
@@ -23,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Kirshin\\CheckNalog\\": "src/"
+            "Kirshin\\": "src/"
         }
     }
 }
