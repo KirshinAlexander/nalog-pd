@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Kirshin\CheckNalog;
+namespace Kirshin\Services\CheckNalog;
 
 
 use JsonException;
